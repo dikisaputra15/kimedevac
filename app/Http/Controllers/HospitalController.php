@@ -9,6 +9,7 @@ use App\Models\Police;
 use App\Models\Embassiees;
 use App\Models\Provincesregion;
 use Illuminate\Support\Facades\DB;
+use Exception;
 
 class HospitalController extends Controller
 {
@@ -293,9 +294,8 @@ class HospitalController extends Controller
          // Execute the query and return JSON response
         $hospitals = $query->get();
         $levelCounts = [
-            'National Referral Hospital' => 0,
-            'Regional Referral Hospital' => 0,
-            'Provincial Hospital' => 0,
+            'National Hospital' => 0,
+            'District Hospital' => 0,
             'Clinic / Health Centre' => 0,
         ];
 

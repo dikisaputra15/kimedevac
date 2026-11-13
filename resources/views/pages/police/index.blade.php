@@ -2155,10 +2155,8 @@ combinedPanelDiv.innerHTML = `
             <label>Category:</label>
             ${[
                 'National Police HQ',
-                'Regional Command',
-                'Provincial Command',
                 'Police Station',
-                'Police Sub-Station',
+                'Community Police',
                 'Specialized Unit'
             ].map(c => `
             <label style="display:block;font-size:13px;margin-bottom:5px;">

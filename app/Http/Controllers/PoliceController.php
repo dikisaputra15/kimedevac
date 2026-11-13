@@ -172,10 +172,8 @@ class PoliceController extends Controller
         $polices = $query->get();
         $categoryCounts = [
             'National Police HQ' => 0,
-            'Regional Command' => 0,
-            'Provincial Command' => 0,
             'Police Station' => 0,
-            'Police Sub-Station' => 0,
+            'Community Police' => 0,
             'Specialized Unit' => 0,
         ];
 
