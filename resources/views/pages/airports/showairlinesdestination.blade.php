@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title','More Details')
-@section('page-title', 'Vanuatu Airports')
+@section('page-title', 'Kiribati Airports')
 
 @push('styles')
 
@@ -176,7 +176,7 @@
     <!-- Kolom kiri dengan 3 card -->
     <div class="col-md-3">
         <div class="card mb-3">
-            <div class="card-header fw-bold"><img src="{{ asset('images/flag-fsm.svg') }}" alt="Flag of the Vanuatu" style="width: 30px; height: auto;"> Domestic</div>
+            <div class="card-header fw-bold"><img src="{{ asset('images/flag-fsm.svg') }}" alt="Flag of the Kiribati" style="width: 30px; height: auto;"> Domestic</div>
             <div class="card-body overflow-auto" style="max-height: 300px;">
                 <?php echo $airport->domestic_flights; ?>
             </div>
@@ -251,7 +251,7 @@
                 </div>
 
             <div class="card-body overflow-auto">
-                <iframe src="https://globe.adsbexchange.com/?lat=6.9850996&amp;lon=158.2089880&amp;zoom=7" width="100%" height="600" frameborder="0"></iframe>
+                <iframe src="https://globe.adsbexchange.com/?lat=1.4518&amp;lon=172.9717&amp;zoom=7" width="100%" height="600" frameborder="0"></iframe>
             </div>
         </div>
     </div>

@@ -184,7 +184,7 @@
                         <strong>Address:</strong>
                         {{ $embassy->location }},
                         {{ $city->city }},
-                        {{ $province->provinces_region }}, Vanuatu
+                        {{ $province->provinces_region }}, Kiribati
                     </p>
                     <p>
                         <strong>Latitude:</strong> {{ $embassy->latitude }}

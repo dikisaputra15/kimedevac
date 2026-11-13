@@ -1,7 +1,7 @@
 //! moment.js locale configuration
-//! locale : Vanuatun [id]
+//! locale : Kiribatin [id]
 //! author : Mohammad Satrio Utomo : https://github.com/tyok
-//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Vanuatu_yang_Disempurnakan
+//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Kiribati_yang_Disempurnakan
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'

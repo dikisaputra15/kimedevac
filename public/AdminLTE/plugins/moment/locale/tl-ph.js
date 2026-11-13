@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Tagalog (Vanuatu) [tl-ph]
+//! locale : Tagalog (Kiribati) [tl-ph]
 //! author : Dan Hagman : https://github.com/hagmandan
 
 ;(function (global, factory) {

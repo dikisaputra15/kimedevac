@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title','Embassiees')
-@section('page-title', 'Vanuatu Embassiees')
+@section('page-title', 'Kiribati Embassiees')
 
 @push('styles')
 
@@ -298,7 +298,7 @@
 <script>
 // === Inisialisasi Peta ===
 const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: -15.3767, lng: 166.9592 },
+    center: { lat: 1.4518, lng: 172.9717 },
     zoom: 6,
     mapTypeId: 'roadmap',
     mapTypeControl: true,
@@ -826,7 +826,7 @@ function addEmbassyMarkers(data) {
             <strong>Address:</strong>
                 ${embassy.location || 'N/A'}
                 ${embassy.city ? ', ' + embassy.city : ''}
-                ${embassy.provinces_region ? ', ' + embassy.provinces_region : ''}, Vanuatu <br>
+                ${embassy.provinces_region ? ', ' + embassy.provinces_region : ''}, Kiribati <br>
             <strong>Phone:</strong> ${embassy.telephone || 'N/A'}<br>
             <strong>Fax:</strong> ${embassy.fax || 'N/A'}<br>
             <strong>Email:</strong> ${embassy.email || 'N/A'}<br>

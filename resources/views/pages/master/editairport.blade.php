@@ -29,7 +29,7 @@
 
         <div class="col-md-12">
             <div class="form-group">
-                <label>Edit Province</label>
+                <label>Edit Island / Urban Council</label>
                 <select class="form-control" name="province_id" id="province">
                     <?php
                         foreach ($provinces as $prov) {
@@ -51,7 +51,7 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Edit Area Council</label>
+                <label>Edit Village</label>
                 <select class="form-control" name="city" id="city">
                     <?php
                         foreach ($cities as $city) {
@@ -1123,7 +1123,7 @@
                 type: 'GET',
                 success: function (data) {
                     $('#city').empty();
-                    $('#city').append('<option value="">-- Choosse Area council --</option>');
+                    $('#city').append('<option value="">-- Choosse Village --</option>');
                     $.each(data, function (key, city) {
                         $('#city').append('<option value="' + city.id + '">' + city.city + '</option>');
                     });
@@ -1131,7 +1131,7 @@
             });
         } else {
             $('#city').empty();
-            $('#city').append('<option value="">-- Choosse Area Council  --</option>');
+            $('#city').append('<option value="">-- Choosse Village --</option>');
         }
     });
 </script>

@@ -10,7 +10,7 @@
 
 /*
  * Translated default messages for the jQuery validation plugin.
- * Locale: ID (Vanuatu; Vanuatun)
+ * Locale: ID (Kiribati; Kiribatin)
  */
 $.extend( $.validator.messages, {
 	required: "Kolom ini diperlukan.",

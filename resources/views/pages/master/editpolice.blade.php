@@ -22,7 +22,7 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Province</label>
+                <label>Island / Urban Council</label>
                 <select class="form-control" name="province_id" id="province">
                     <?php
                         foreach ($provinces as $prov) {
@@ -44,7 +44,7 @@
 
         <div class="col-md-12">
             <div class="form-group">
-                <label>Edit Area Council</label>
+                <label>Edit Village</label>
                 <select class="form-control" name="city" id="city">
                     <?php
                         foreach ($cities as $city) {
@@ -131,48 +131,26 @@
                     <label>National Police HQ</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Regional Command' ? 'selected' : '' }}">
-                    <input class="form-check-input category-radio"
-                        type="radio"
-                        name="category"
-                        value="Regional Command"
-                        data-icon="{{ asset('images/Layer2.png') }}"
-                        {{ $police->category == 'Regional Command' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Layer2.png') }}" width="16">
-                    <label>Regional Command</label>
-                </div>
-
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Provincial Command' ? 'selected' : '' }}">
-                    <input class="form-check-input category-radio"
-                        type="radio"
-                        name="category"
-                        value="Provincial Command"
-                        data-icon="{{ asset('images/Layer3.png') }}"
-                        {{ $police->category == 'Provincial Command' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Layer3.png') }}" width="16">
-                    <label>Provincial Command</label>
-                </div>
-
                 <div class="form-check form-check-inline police-option {{ $police->category == 'Police Station' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
                         value="Police Station"
-                        data-icon="{{ asset('images/Layer4.png') }}"
+                        data-icon="{{ asset('images/Layer2.png') }}"
                         {{ $police->category == 'Police Station' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Layer4.png') }}" width="16">
+                    <img src="{{ asset('images/Layer2.png') }}" width="16">
                     <label>Police Station</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Police Sub-Station' || $police->category == 'Police Sub-Station' ? 'selected' : '' }}">
+                <div class="form-check form-check-inline police-option {{ $police->category == 'Community Police' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="Police Sub-Station"
-                        data-icon="{{ asset('images/Brimob.png') }}"
-                        {{ $police->category == 'Police Sub-Station' || $police->category == 'Police Sub-Station' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Brimob.png') }}" width="16">
-                    <label>Police Sub-Station</label>
+                        value="Community Police"
+                        data-icon="{{ asset('images/Layer3.png') }}"
+                        {{ $police->category == 'Community Police' ? 'checked' : '' }}>
+                    <img src="{{ asset('images/Layer3.png') }}" width="16">
+                    <label>Community Police</label>
                 </div>
 
                 <div class="form-check form-check-inline police-option {{ $police->category == 'Specialized Unit' ? 'selected' : '' }}">
@@ -180,9 +158,9 @@
                         type="radio"
                         name="category"
                         value="Specialized Unit"
-                        data-icon="{{ asset('images/Gegana.png') }}"
+                        data-icon="{{ asset('images/Layer4.png') }}"
                         {{ $police->category == 'Specialized Unit' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Gegana.png') }}" width="16">
+                    <img src="{{ asset('images/Layer4.png') }}" width="16">
                     <label>Specialized Unit</label>
                 </div>
 
@@ -371,7 +349,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 type: 'GET',
                 success: function (data) {
                     $('#city').empty();
-                    $('#city').append('<option value="">-- Choosse Area Council --</option>');
+                    $('#city').append('<option value="">-- Choosse Village --</option>');
                     $.each(data, function (key, city) {
                         $('#city').append('<option value="' + city.id + '">' + city.city + '</option>');
                     });
@@ -379,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         } else {
             $('#city').empty();
-            $('#city').append('<option value="">-- Choosse Area Council  --</option>');
+            $('#city').append('<option value="">-- Choosse Village --</option>');
         }
     });
 </script>

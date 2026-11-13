@@ -22,9 +22,9 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Province</label>
+                <label>Island / Urban Council</label>
                 <select class="form-control" name="province_id" id="province">
-                        <option value="0">-Choosse Provinces-</option>
+                        <option value="0">-Choosse Island / Urban Council-</option>
                     @foreach($provinces as $prov)
                         <option value="{{$prov->id}}">{{$prov->provinces_region}}</option>
                     @endforeach
@@ -34,9 +34,9 @@
 
         <div class="col-md-12">
             <div class="form-group">
-                <label for="city">Area Council</label>
+                <label for="city">Village</label>
                 <select name="city" id="city" class="form-control">
-                    <option value="">-Choosse Area Council-</option>
+                    <option value="">-Choosse Village-</option>
                 </select>
             </div>
         </div>
@@ -65,14 +65,11 @@
             <div class="form-group">
                 <label>Facility Level</label>
                 <select class="form-control" name="facility_level">
-                    <option value="National Referral Hospital">
-                        National Referral Hospital
+                    <option value="National Hospital">
+                        National Hospital
                     </option>
-                    <option value="Regional Referral Hospital">
-                        Regional Referral Hospital
-                    </option>
-                    <option value="Provincial Hospital">
-                        Provincial Hospital
+                    <option value="District Hospital">
+                        District Hospital
                     </option>
                     <option value="Clinic / Health Centre">
                         Clinic / Health Centre
@@ -110,9 +107,8 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label>Icon</label><br>
-                <input type="radio" name="icon" value="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png"><img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png" style="width:24; height:24;"> National Referral Hospital
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-purple.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-purple.png" style="width:24; height:24;"> Regional Referral Hospital
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-green.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-green.png" style="width:24; height:24;"> Provincial Hospital
+                <input type="radio" name="icon" value="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png"><img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png" style="width:24; height:24;"> National Hospital
+                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-purple.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-purple.png" style="width:24; height:24;"> District Hospital
                 <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-tosca.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-tosca.png" style="width:24; height:24;">  Clinic / Health Centre
             </div>
         </div>
@@ -903,7 +899,7 @@
                 type: 'GET',
                 success: function (data) {
                     $('#city').empty();
-                    $('#city').append('<option value="">-- Choosse Area council --</option>');
+                    $('#city').append('<option value="">-- Choosse Village --</option>');
                     $.each(data, function (key, city) {
                         $('#city').append('<option value="' + city.id + '">' + city.city + '</option>');
                     });
@@ -911,7 +907,7 @@
             });
         } else {
             $('#city').empty();
-            $('#city').append('<option value="">-- Choosse Area Council  --</option>');
+            $('#city').append('<option value="">-- Choosse Village --</option>');
         }
     });
 </script>

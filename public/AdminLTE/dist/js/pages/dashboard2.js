@@ -233,7 +233,7 @@ $(function () {
   //     },
   //     {
   //       latLng: [6.91, 158.18],
-  //       name  : 'Vanuatu'
+  //       name  : 'Kiribati'
   //     },
   //     {
   //       latLng: [1.3, 103.8],

@@ -146,7 +146,7 @@
                         <strong>Address:</strong>
                         {{ $police->location }},
                         {{ $city->city }},
-                        {{ $province->provinces_region }}, Vanuatu
+                        {{ $province->provinces_region }}, Kiribati
                     </p>
                     <p>
                         <strong>Latitude:</strong> {{ $police->latitude }}
