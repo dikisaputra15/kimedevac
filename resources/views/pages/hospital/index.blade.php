@@ -1039,8 +1039,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <script>
 // === Inisialisasi Peta ===
 const map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 1.4518, lng: 172.9717 },
-    zoom: 5,
+    center: { lat: 1.329, lng: 172.979 }, // Tarawa, Kiribati
+    zoom: 8,
     mapTypeId: 'roadmap',
     mapTypeControl: true,
     fullscreenControl: true,
